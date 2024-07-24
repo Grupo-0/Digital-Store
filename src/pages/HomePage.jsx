@@ -24,7 +24,7 @@ const HomePage = () => {
       <Section title="Coleções em Destaque">
         <ProductCards />
       </Section>
-      <Section title="Produtos em alta" options={<Link to='/product-listing'>Ver Mais</Link>}>
+      <Section title="Produtos em alta">
         <ProductListing />  
       </Section>
     </Layout>

@@ -7,9 +7,9 @@ const Layout = ({ children }) => {
     <div className='flex flex-col flex-wrap gap-32'>
       <div className='container-default'>
         <Header />
-        <main>{children}</main>
+        <main className="flex flex-col items-center">{children}</main>
       </div>
-      <Footer />
+      <Footer />x'
     </div>
   );
 }
