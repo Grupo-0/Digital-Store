@@ -1,5 +1,5 @@
 import ProductCard from '../product-card/ProductCard.jsx';
-import ProductItens from './ProductItens.jsx';
+import ProductItens from '/src/database/ProductItens.js';
 
 const ProductListing = () => {
   let cards = [];
