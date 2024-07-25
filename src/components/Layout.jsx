@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
         <Header />
         <main className="flex flex-col items-center">{children}</main>
       </div>
-      <Footer />x'
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import Imgs from './Imgs';
+import Imgs from '/src/database/Imgs.js';
 
 const ProductCards = () => {
     return (
