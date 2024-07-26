@@ -10,7 +10,7 @@ const ProductViewPage = () => {
         <BuyBox />
         <div className="mt-12">
           <h2 className="ml-8 mb-8 font-bold text-2xl text-dark-gray-2">Produtos relacionados</h2>
-          <ProductListing />
+          <ProductListing quantidade={4} />
         </div>
         
     </Layout>

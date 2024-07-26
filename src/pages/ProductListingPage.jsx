@@ -14,7 +14,7 @@ const ProductListingPage = () => {
           <FilterGroup/>
         </div>
         <Section>
-          <ProductListing />
+          <ProductListing quantidade={15} />
         </Section>
       </div>
     </Layout>
