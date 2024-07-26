@@ -1,5 +1,7 @@
+import React from 'react';
 import ProductOptions from "./ProductOptions";
 import Gallery from "../Gallery";
+import Stars from "./Stars.jsx"
 
 const BuyBox = () => {
   return (
@@ -12,17 +14,18 @@ const BuyBox = () => {
               'https://imgnike-a.akamaihd.net/768x768/01369851A1.jpg',
               'https://imgnike-a.akamaihd.net/768x768/01369851A4.jpg',
               'https://imgnike-a.akamaihd.net/768x768/01369851A6.jpg'
-              
+
             ]}
           />
         </div>
         <div className="flex flex-col gap-y-1 ml-12">
           <h3 className="font-bold text-3xl text-dark-gray">Name</h3>
           <p className="text-dark-gray-3">Casual | Nike | REF:38416711</p>
-          <div className="flex gap-3">
-            <img src="src\assets\Stars.svg" alt="" />
-            <img src="src\assets\Frame 9.svg" alt="" />
-            <span>(90) Avaliações</span>
+          <div className="flex gap-2 align-baseline">                
+            <Stars />
+            <span className='mt-2'>teste</span>
+            {/* Avaliações */}
+            <span className='mt-2'>() Avaliações</span>
           </div>
 
           <h3 className="text-dark-gray-2 text-2xl">
