@@ -1,11 +1,11 @@
 import ProductCard from '../product-card/ProductCard.jsx';
-import ProductItens from './ProductItens.js';
+import ProductItens from '/src/database/ProductItens.js';
 
 const ProductListing = ({quantidade}) => {
   const limites = ProductItens.slice(0, quantidade);
 
-  const cards = limites.map((item) => (
-    <ProductCard produtos={item} />
+  const cards = limites.map((item, i) => (
+    <ProductCard key={i} produtos={item} />
   ));
 
   return <div className='flex flex-wrap gap-4 justify-center'>{cards}</div>;
