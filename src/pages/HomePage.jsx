@@ -3,7 +3,7 @@ import Gallery from '../components/Gallery';
 import ProductListing from '../components/product-listing/ProductListing';
 import ProductCards from '../components/Collection';
 import Section from '../components/Section';
-import { Link } from 'react-router-dom';
+import Colecoes from '../components/Colecoes';
 
 
 const HomePage = () => {
@@ -24,6 +24,7 @@ const HomePage = () => {
       <Section title="Coleções em Destaque">
         <ProductCards />
       </Section>
+      <Colecoes />
       <Section title="Produtos em alta">
         <ProductListing quantidade={8} />
       </Section>
