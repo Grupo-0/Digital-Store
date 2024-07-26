@@ -2,11 +2,12 @@ import React from 'react';
 import ProductOptions from "./ProductOptions";
 import Gallery from "../Gallery";
 import Stars from "./Stars.jsx"
+import ProductItens from '../../database/ProductItens.js';
 
 const BuyBox = () => {
   return (
     <>
-      <div className="flex justify-center p-12 gap-8">
+      <div className="flex justify-center p-12 gap-8 w-4/5">
         <div className="w-full h-full">
           <Gallery
             slides={[
@@ -19,17 +20,17 @@ const BuyBox = () => {
           />
         </div>
         <div className="flex flex-col gap-y-1 ml-12">
-          <h3 className="font-bold text-3xl text-dark-gray">Name</h3>
-          <p className="text-dark-gray-3">Casual | Nike | REF:38416711</p>
+          <h3 className="font-bold text-3xl text-dark-gray">{ProductItens[0].name}</h3>
+          <p className="text-dark-gray-3">Casual | Nike | REF: {ProductItens[0].referencia}</p>
           <div className="flex gap-2 align-baseline">                
             <Stars />
-            <span className='mt-2'>teste</span>
+            <span className='mt-2 p-4 py-1 bg-warning rounded-lg'>4,7</span>
             {/* Avaliações */}
-            <span className='mt-2'>() Avaliações</span>
+            <span className='mt-2'>({ProductItens[0].avaliacao}) Avaliações</span>
           </div>
 
           <h3 className="text-dark-gray-2 text-2xl">
-            <span className="text-base">R$</span>219,00 <s className="ligth-gray-2 text-base">219,00</s>
+            <span className="text-base">R$</span>{ProductItens[0].priceDiscount}<s className="ligth-gray-2 text-base">{ProductItens[0].price},00</s>
           </h3>
 
           <p className="text-light-gray font-semibold mt-5">Descrição do produto</p>
