@@ -82,4 +82,8 @@ Esse projeto é uma prova cuja a atividade é desenvolver o front-end de um E-co
     npm i # Instala todas as dependências
     npm run dev # Executa o projeto
     ```
+
+# 4. Equipe
+[Rafael](https://github.com/rafaelcesar0) | [Lucius](https://github.com/LuciusHx) | [Jean](https://github.com/Jean-coll) | [Sara](https://github.com/sarafirme) | [Stefani](https://github.com/Stefanisrodrigues) | [Larissa](https://github.com/larigeorgia )
+
 # Divirta-se ! 😁
