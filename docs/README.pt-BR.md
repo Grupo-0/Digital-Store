@@ -84,6 +84,6 @@ Esse projeto é uma prova cuja a atividade é desenvolver o front-end de um E-co
     ```
 
 # 4. Equipe
-[Rafael](https://github.com/rafaelcesar0) | [Lucius](https://github.com/LuciusHx) | [Jean](https://github.com/Jean-coll) | [Sara](https://github.com/sarafirme) | [Stefani](https://github.com/Stefanisrodrigues) | [Larissa](https://github.com/larigeorgia )
+[Rafael](https://github.com/rafaelcesar0) | [Lucius](https://github.com/LuciusHx) | [Jean](https://github.com/Jean-coll) | [Sara](https://github.com/sarafirme) | [Stefani](https://github.com/Stefanisrodrigues) | [Lariça](https://github.com/larigeorgia )
 
 # Divirta-se ! 😁
