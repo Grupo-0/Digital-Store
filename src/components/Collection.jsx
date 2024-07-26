@@ -3,12 +3,10 @@ import Imgs from '/src/database/Imgs.js';
 
 const ProductCards = () => {
     return (
-        <>
-            <div className="">
-                
-                <div className="flex ">
+            <div className="max-w-[1440px] h-[303px] w-full pb-5 relative group">
+                <div className='flex'>
                     {Imgs.map((imagem, index) => (
-                        <div key={index} className="mx-3 mb-8 bg-white rounded-lg">
+                        <div key={index} className="mx-3 bg-white rounded-lg">
                             <div className="relative">
                                 <img
                                     src={imagem.imagem}
@@ -19,14 +17,10 @@ const ProductCards = () => {
                                     Comprar
                                 </button>
                             </div>
-                            <div className="px-6 pt-4 pb-2">
-                                {/* Outros conteúdos podem ser adicionados aqui */}
-                            </div>
                         </div>
                     ))}
                 </div>
             </div>
-        </>
     );
 }
 
