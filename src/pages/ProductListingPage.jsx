@@ -8,7 +8,7 @@ import ProductListing from "../components/product-listing/ProductListing";
 const ProductListingPage = () => {
   return (
     <Layout>
-      <div className="flex mt-12 ml-3 w-4/5 gap-5">
+      <div className="flex mt-12 ml-3 gap-5">
         <div className="flex flex-col w-1/4">
           <Filter />
           <FilterGroup/>
