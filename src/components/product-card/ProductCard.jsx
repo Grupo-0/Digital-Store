@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 const ProductCard = ({ produtos }) => {
   let css = '';
   let discount = '';
