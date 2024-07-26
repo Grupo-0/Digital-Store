@@ -82,4 +82,6 @@ This project is a test whose activity is to develop the front-end of a fictitiou
     npm i # Installs all dependencies
     npm run dev # Execute the project
     ```
+# 4. Team
+[Rafael](https://github.com/rafaelcesar0) | [Lucius](https://github.com/LuciusHx) | [Jean](https://github.com/Jean-coll) | [Sara](https://github.com/sarafirme) | [Stefani](https://github.com/Stefanisrodrigues) | [Larissa](https://github.com/larigeorgia )
 # Have fun ! 😁
