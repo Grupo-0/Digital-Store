@@ -25,7 +25,7 @@ const HomePage = () => {
         <ProductCards />
       </Section>
       <Section title="Produtos em alta">
-        <ProductListing />  
+        <ProductListing quantidade={8} />
       </Section>
     </Layout>
   );
