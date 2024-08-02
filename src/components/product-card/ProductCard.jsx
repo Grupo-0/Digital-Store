@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 const ProductCard = ({ produtos }) => {
   let css = '';
   let discount = '';
@@ -10,7 +11,7 @@ const ProductCard = ({ produtos }) => {
   }
 
   return (
-    <Link to="/product-view">
+    <Link to={`/product-view/${produtos.id}`}>
       <div>
         <img className='h-80 w-72' src={produtos.image} alt='' />
         <div>
