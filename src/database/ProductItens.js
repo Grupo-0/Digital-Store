@@ -17,7 +17,7 @@ const ProductItens = [
     image: 'https://imgnike-a.akamaihd.net/250x250/027664NX.jpg',
     name: 'Dunk Low',
     tipo:'Tênis',
-    tamanho: ['38', '39', '40', '41','42'],
+    tamanho: ['32', '39', '40', '41','42'],
     cor:['var(--color-primary)', 'var(--color-primary-2)', 'var(--color-error)', 'var(--color-success'],
     avaliacao: 3.2,
     price: 400,

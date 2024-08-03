@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 
-const ProductOptions = () => {
-  const options = {
-    // definindo as opcoes
-    tamanho: ["38", "39", "40", "41", "42"],
-    cor: ['var(--color-primary)', 'var(--color-primary-2)', 'var(--color-error)', 'var(--color-success)']
-  };
+const ProductOptions = ({ cor , tamanho }) => {
 
   // armazenando as selecoes
   const [selectedSize, setSelectedSize] = useState(null);
@@ -16,13 +11,12 @@ const ProductOptions = () => {
       <div className="flex flex-col gap-y-2 font-semibold mt-5">
         <span className="text-light-gray">Tamanho</span>
         <ul className="flex gap-3 pr-3 list-none">
-          {options.tamanho.map((size, index) => (
+          {tamanho.map((size, index) => (
             <li key={index}>
               <button
               // quando clicado, a funcao setSelectSize é chamado ao (size)
                 onClick={() => setSelectedSize(size)}
-                className={`border border-light-gray-2 px-4 py-2 rounded ${selectedSize === size ? 'bg-gray-300' : ''}`}
-              >
+                className={`border border-light-gray-2 px-4 py-2 rounded ${selectedSize === size ? 'bg-gray-300' : ''}`}>
                 {size}
               </button>
             </li>
@@ -32,7 +26,7 @@ const ProductOptions = () => {
       <div>
         <span className="text-light-gray font-semibold">Cor</span>
         <ul className="flex gap-3">
-          {options.cor.map((color, index) => (
+          {cor.map((color, index) => (
             <li key={index}>
               <button
               // quando clicado, a funcao mu

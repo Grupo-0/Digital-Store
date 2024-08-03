@@ -7,7 +7,6 @@ import { useParams } from 'react-router-dom';
 
 const BuyBox = () => {
   let { id } = useParams();  
-  console.log(id)
 
   let produto = ProductItens.find(p => p.id.toString() === id);
 
@@ -38,8 +37,8 @@ const BuyBox = () => {
 
           <p className="text-light-gray font-semibold mt-5">Descrição do produto</p>
           <p className="w-80 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <ProductOptions />
-          <button className="w-full p-2 bg-warning rounded-xl text-white font-semibold px-12 mt-5">Comprar</button>
+          <ProductOptions cor={produto.cor} tamanho={produto.tamanho}/>
+          <button className="w-full p-2 bg-warning rounded-xl text-white font-semibold px-12 mt-5 hover:bg-white hover:text-warning border border-warning">Comprar</button>
         </div>
       </div>
 
