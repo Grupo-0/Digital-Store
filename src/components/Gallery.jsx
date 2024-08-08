@@ -18,7 +18,7 @@ export default function Gallery({ slides }) {
 
   useEffect(() => {
     resetTimeout();
-    // return () => clearTimeout(timeoutId);
+    return () => clearTimeout(timeoutId);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentIndex]);
 
@@ -40,37 +40,45 @@ export default function Gallery({ slides }) {
 
   return (
     <div className='max-w-[1440px] h-[681px] w-full pb-16 relative group'>
-      <div
-        style={{ backgroundImage: `url(${slides[currentIndex]})` }}
-        className='w-full h-full rounded bg-center bg-cover duration-500'
-      ></div>
-      {/* Left Arrow */}
-      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-        <BsChevronCompactLeft onClick={leftSlide} size={30} />
-      </div>
-      {/* Right Arrow */}
-      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-        <BsChevronCompactRight onClick={rightSlide} size={30} />
-      </div>
-      {/* Dot Indicators */}
-      <div className='flex top-4 justify-center py-2'>
-        {slides.map((_, slideIndex) => (
+      {slides && slides.length > 0 ? (
+        <>
           <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className='text-2xl cursor-pointer'
-          >
-            <RxDotFilled
-              size={34}
-              className={
-                currentIndex === slideIndex
-                  ? 'text-primary'
-                  : 'text-light-gray-2'
-              }
-            />
+            style={{ backgroundImage: `url(${slides[currentIndex]})` }}
+            className='w-full h-full rounded bg-center bg-cover duration-500'
+          ></div>
+          {/* Left Arrow */}
+          <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+            <BsChevronCompactLeft onClick={leftSlide} size={30} />
           </div>
-        ))}
-      </div>
+          {/* Right Arrow */}
+          <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+            <BsChevronCompactRight onClick={rightSlide} size={30} />
+          </div>
+          {/* Dot Indicators */}
+          <div className='flex top-4 justify-center py-2'>
+            {slides.map((_, slideIndex) => (
+              <div
+                key={slideIndex}
+                onClick={() => goToSlide(slideIndex)}
+                className='text-2xl cursor-pointer'
+              >
+                <RxDotFilled
+                  size={34}
+                  className={
+                    currentIndex === slideIndex
+                      ? 'text-primary'
+                      : 'text-light-gray-2'
+                  }
+                />
+              </div>
+            ))}
+          </div>
+        </>
+      ) : (
+        <div className='w-full h-full flex items-center justify-center'>
+          <p>Sem imagens disponíveis</p>
+        </div>
+      )}
     </div>
   );
 }

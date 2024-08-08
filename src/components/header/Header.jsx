@@ -12,7 +12,8 @@ const Header = () => {
   return (
       <header className='flex flex-col gap-4 p-5 '>
         <div className='flex items-center justify-between gap-5'>
-          <Logo src='src/assets/logo-header.svg'/>
+          {/* <Logo src='src\assets\logo-header.svg'/> */}
+          <Logo src='https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/154c105f9b1a127fb30ca797a224a9a301439ed5/assets/logo-header.svg'/>
           <div className='flex items-center justify-center gap-5'>
           <SearchInput/>
           <LoginButton/>
